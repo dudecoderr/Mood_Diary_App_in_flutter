@@ -92,6 +92,10 @@ flutter:
       fonts:
         - asset: assets/fonts/Roboto-Bold.ttf
 
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
