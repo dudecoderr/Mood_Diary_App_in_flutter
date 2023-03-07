@@ -4,6 +4,7 @@ import 'package:mood_diary_app/constant/common_button.dart';
 import 'package:mood_diary_app/constant/constant.dart';
 import 'package:mood_diary_app/constant/text_widget.dart';
 import 'package:mood_diary_app/screens/update_diary_screen.dart';
+import 'package:page_transition/page_transition.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -161,9 +162,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   CustomButton(
                     onTap: () {
                       Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const UpdateDairyScreen()),
-                      );
+                          context, PageTransition(type: PageTransitionType.theme, duration: Duration(seconds: 1), child: UpdateDairyScreen()));
+
+                      // Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(builder: (context) => const UpdateDairyScreen()),
+                      // );
                     },
                     text: 'Update my dairy',
                     color: kWhiteColor,

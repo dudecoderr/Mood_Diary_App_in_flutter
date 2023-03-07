@@ -39,6 +39,11 @@ dependencies:
 #  Responsible UI
   flutter_screenutil: ^5.6.1
 
+#  navigator
+  page_transition: ^2.0.9
+
+  date_picker_timeline: ^1.2.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
